@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transfer Memorandum Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            padding: 8px 20px;
+            font-size: 14px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Transfer Memorandum Form</h2>
+        <form action="process-form.php" method="POST">
+            <div class="form-group">
+                <label for="sellerName">Seller's Name:</label>
+                <input type="text" id="sellerName" name="sellerName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sellerFatherName">Seller's Father's Name:</label>
+                <input type="text" id="sellerFatherName" name="sellerFatherName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sellerAddress">Seller's Address:</label>
+                <input type="text" id="sellerAddress" name="sellerAddress" required>
+            </div>
+
+            <div class="form-group">
+                <label for="propertyAddress">Address of the Plot Being Sold/Transferred  (Eg. : 092. SITUATED IN BLOCK S, AT SECTOR 128):</label>
+                <textarea id="propertyAddress" name="propertyAddress" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="propertyLandArea">Land Area of the House/Plot Being Sold:</label>
+                <input type="text" id="propertyLandArea" name="propertyLandArea" required>
+            </div>
+
+            <div class="form-group">
+                <label for="buyerName">Buyer's Name:</label>
+                <input type="text" id="buyerName" name="buyerName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="buyerFatherName">Buyer's Father's Name:</label>
+                <input type="text" id="buyerFatherName" name="buyerFatherName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="buyerAddress">Buyer's Address:</label>
+                <input type="text" id="buyerAddress" name="buyerAddress" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
